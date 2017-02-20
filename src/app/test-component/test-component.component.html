@@ -1,0 +1,10 @@
+<div class="testContent">
+ <div class="input-group">
+    <input type="text" class="form-control" placeholder="Test" aria-describedby="basic-addon1" [(ngModel)]='Parentname'>
+</div>
+    <button type="button" class="btn btn-primary" (click)='showName()'>
+        Send
+    </button>
+    <p>{{Parentname}}</p>
+    <app-test2 [name] = "Parentname"></app-test2>
+</div>
